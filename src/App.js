@@ -6,6 +6,8 @@ import Categorias from "./pages/Categorias";
 import MeusPedidos from "./pages/MeusPedidos";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
+import ProdutosAlta from "./components/ProdutosAlta";
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
@@ -20,6 +22,9 @@ export default function App() {
           <Route path="/categorias" element={<Categorias/>} />
           <Route path="/meus-pedidos" element={<MeusPedidos/>} />
         </Routes>
+
+        <ProdutosAlta/>
+        <Footer/>
       </BrowserRouter>
     </div>
   )
