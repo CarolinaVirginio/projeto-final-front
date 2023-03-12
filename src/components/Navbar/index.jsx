@@ -1,16 +1,23 @@
 import {Link} from "react-router-dom";
 
-import styles from './styles.css';
+import { BsSearch } from "react-icons/bs";
+
+import './styles.css';
 
 import logo from '../../img/logo-digital-college.png'
 
 export default function Navbar() {
     return (
-        <nav class="navbar">
+        <nav className="navbar">
             <Link to="/">
-                <img src={logo} alt="Digital College" class="logo" />
+                <img src={logo} alt="Digital College" className="logo" />
                 <span>Digital College</span>
             </Link>
+
+            <div className="input-container">
+                <input type="text" placeholder="Pesquisar produto..." />
+                <BsSearch />
+            </div>
         </nav>
     )
 }

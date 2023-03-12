@@ -1,6 +1,6 @@
 .menu {
     background-color: white;
-    padding: 52px 112px;
+    padding: 0 112px 52px 112px;
 }
 
 .menu > a {
@@ -8,4 +8,5 @@
     margin-right: 34.48px;
     color: #474747;
     font-size: 17.28px;
+    font-family: Inter;
 }

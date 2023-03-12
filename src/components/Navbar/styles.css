@@ -1,6 +1,6 @@
 .navbar {
     background-color: white;
-    padding: 52px 112px;
+    padding: 52px 112px 43.2px 112px;
 }
 
 .navbar > a {
@@ -19,4 +19,10 @@
 .navbar > a > span {
     font-size: 36.4px;
     color: #C92071;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.navbar > .input-container {
+    width: 603.72px;
 }
