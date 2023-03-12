@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-import { BsSearch } from "react-icons/bs";
+import { BsSearch, BsCart2 } from "react-icons/bs";
 
 import './styles.css';
 
@@ -17,6 +17,15 @@ export default function Navbar() {
             <div className="input-container">
                 <input type="text" placeholder="Pesquisar produto..." />
                 <BsSearch />
+            </div>
+
+            <span className="link-cadastro">Cadastre-se</span>
+
+            <button>Entrar</button>
+            
+            <div className="cart">
+                <BsCart2 className="cart-icon" />
+                <span className="badge badge-light">2</span>
             </div>
         </nav>
     )

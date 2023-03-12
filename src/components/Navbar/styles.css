@@ -24,5 +24,73 @@
 }
 
 .navbar > .input-container {
+    background-color: #4747470A;
+    border-radius: 8.64px;
+    padding-right: 22px;
     width: 603.72px;
+}
+
+.navbar > .input-container > input {
+    width: 97%;
+    height: 64.8px;
+    padding: 17.28px 25.92px;
+    font-size: 17.28px;
+    background-color: #47474700;
+    border: 1px solid transparent;
+    color: #666666;
+}
+
+.navbar > .input-container > input::placeholder {
+    color: #66666699;
+}
+
+.navbar > .input-container > input:focus-visible {
+    outline: none;
+}
+
+.navbar > .input-container > svg {
+    width: 3%;
+    color: #666666;
+}
+
+.navbar > .link-cadastro {
+    font-family: Inter;
+    font-size: 17.28px;
+    text-decoration: underline;
+    color: #474747;
+    cursor: pointer;
+}
+
+.navbar > button {
+    font-family: Inter;
+    background-color: #C92071;
+    border: 1px solid #C92071;
+    border-radius: 8.64px;
+    color: white;
+    font-size: 14px;
+    width: 123.12px;
+    height: 43.2px;
+    font-weight: 700;
+}
+
+.navbar > .cart {
+    position: relative;
+    margin-left: 40px;
+}
+
+.navbar > .cart > .cart-icon {
+    color: #C92071;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.navbar > .cart > .badge.badge-light {
+    background-color: #C92071;
+    font-size: 9px;
+    font-family: Inter;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    border-radius: 50%;
 }
