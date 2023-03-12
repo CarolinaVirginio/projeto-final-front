@@ -1,0 +1,44 @@
+*{
+    background-color: #edf2f4;
+    font-family: 'arial';
+}
+
+.row{
+    margin-top: 20px;
+} 
+
+div div small, div div #duzentos{
+    color: gray;
+}
+
+div div#valor{
+    display: flex;
+
+}
+div div #duzentos{
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+div div #cem{
+    color: black;
+}
+
+div div #cem, div div #duzentos{
+    padding: 0;
+    margin-top: -20px;
+    font-size: 24px;
+}
+
+div div div img{
+    width: 292px;
+    height: 321px;
+}
+
+div div #descriçao{
+    padding: 0px;
+    padding-top: 2px;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.75px;
+}
