@@ -1,0 +1,22 @@
+.navbar {
+    background-color: white;
+    padding: 52px 112px;
+}
+
+.navbar > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar > a > .logo {
+    height: 33px;
+    width: 33px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.navbar > a > span {
+    font-size: 36.4px;
+    color: #C92071;
+}
