@@ -21,8 +21,11 @@ function Produto(){
 export default function ProdutosAlta () {
     return (
         <>
-           <h3>Produtos em alta</h3>
-           <h6>{"Ver todos --->"}</h6>
+        <div className='ProdutosEmAlta'>
+           <div id='titulos'>
+                <h3 className='titulo1'>Produtos em alta</h3>
+                <a href='#'>Ver todos</a>
+           </div>
            <div className='row'>
                 <div className='col'>
                    <Produto/>
@@ -51,7 +54,7 @@ export default function ProdutosAlta () {
                     <Produto/>
                 </div>
             </div>
-
+        </div>
         </>
     )
 }

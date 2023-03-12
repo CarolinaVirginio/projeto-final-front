@@ -1,6 +1,13 @@
-*{
+.ProdutosEmAlta{
     background-color: #edf2f4;
     font-family: 'arial';
+}
+
+#titulos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .row{
@@ -21,7 +28,7 @@ div div #duzentos{
 }
 
 div div #cem{
-    color: black;
+    color: #1F1F1F;
 }
 
 div div #cem, div div #duzentos{

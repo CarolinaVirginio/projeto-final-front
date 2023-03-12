@@ -1,0 +1,27 @@
+section.container-fluid{
+    background-color: #1F1F1F;
+    padding-top: 50px;
+    align-items: center;
+}
+
+section div div img{
+    width: auto;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+section .row p, section .row .col h6{
+    color: #FFFFFF;
+}
+
+section .row h6{
+    padding-bottom: 25px;
+}
+
+section .final{
+    color: gray;
+}
+
+#coluna-1{
+    margin-right: 150px;
+}
