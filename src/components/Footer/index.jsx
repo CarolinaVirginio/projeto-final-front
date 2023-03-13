@@ -1,5 +1,9 @@
 import './styles.css';
 import logo from './logo digital college.png';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import facebook from './facebook-f.svg';
+import instagram from './instagram.svg';
+import twiter from './twitter.svg';
 
 export default function Footer () {
     return (
@@ -11,7 +15,11 @@ export default function Footer () {
                     <p>Lorem ipsum dolor sit amet, consectetur<br/>
                     adipiscing elit, sed do eiusmod tempor<br/>
                     incididunt ut labore ut labore et dolore.</p>
-                    <a href="https://www.flaticon.com/br/icones-gratis/logotipo-do-instagram" title="logotipo do instagram ícones"></a>
+                    <div id='logos'>
+                        <img src={facebook} alt='logo facebook' />
+                        <img src={instagram} alt='logo instagram' />
+                        <img src={twiter} alt='logo twiter' />
+                    </div>
                 </div>
                 <div className='col'>
                    <h6><strong>Informação</strong></h6>
