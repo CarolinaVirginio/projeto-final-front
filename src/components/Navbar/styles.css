@@ -76,12 +76,11 @@
 .navbar > .cart {
     position: relative;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .navbar > .cart > .cart-icon {
     color: #C92071;
-    cursor: pointer;
-    margin-right: 10px;
 }
 
 .navbar > .cart > .badge.badge-light {
@@ -90,7 +89,7 @@
     font-family: Inter;
     position: absolute;
     top: 0px;
-    right: 0px;
+    left: 10px;
     display: block;
     border-radius: 50%;
 }
