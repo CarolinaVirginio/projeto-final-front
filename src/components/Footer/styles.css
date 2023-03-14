@@ -26,8 +26,6 @@ section .final{
     margin-right: 150px;
 }
 
-section div div div.logos img{
-    width: 10px;
-    height: 10px;
-    color: #FFFFFF;
+section div div div#logos{
+  
 }

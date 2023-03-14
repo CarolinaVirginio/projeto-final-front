@@ -1,9 +1,9 @@
 import './styles.css';
 import logo from './logo digital college.png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import facebook from './facebook-f.svg';
-import instagram from './instagram.svg';
-import twiter from './twitter.svg';
+import { Grid } from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Footer () {
     return (
@@ -15,11 +15,18 @@ export default function Footer () {
                     <p>Lorem ipsum dolor sit amet, consectetur<br/>
                     adipiscing elit, sed do eiusmod tempor<br/>
                     incididunt ut labore ut labore et dolore.</p>
-                    <div id='logos'>
-                        <img src={facebook} alt='logo facebook' />
-                        <img src={instagram} alt='logo instagram' />
-                        <img src={twiter} alt='logo twiter' />
-                    </div>
+                    
+                    <Grid container spacing={3}>
+                        <Grid item>
+                            <FacebookIcon sx={{ color: 'white' }} />
+                        </Grid>
+                        <Grid item>
+                            <InstagramIcon sx={{ color: 'white' }} />
+                        </Grid>
+                        <Grid item>
+                            <TwitterIcon sx={{ color: 'white' }} />
+                        </Grid>
+                    </Grid>
                 </div>
                 <div className='col'>
                    <h6><strong>Informação</strong></h6>
