@@ -1,8 +1,8 @@
-div.ProdutosEmAlta{
+#ProdutosEmAlta{
     background-color: #edf2f4;
     font-family: 'Inter';
 }
-
+/* 
 #titulos{
     display: flex;
     justify-content: space-between;
@@ -48,4 +48,4 @@ div div #descriçao{
     margin: 0;
     font-size: 24px;
     letter-spacing: 0.75px;
-}
+} */

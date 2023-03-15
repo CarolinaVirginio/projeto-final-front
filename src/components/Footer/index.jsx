@@ -6,14 +6,18 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
+
 export default function Footer () {
     return (
         <footer>
             <Container>
-                <Grid container>   
+                <Grid container justifyContent="space-between">
                     <Grid item>
-                        <img src={logo} alt='logo da digital store' />
-                        <p>Lorem ipsum dolor sit amet, consectetur<br/>
+                    <Grid container direction="column">
+                        <div id='digitalStore'>
+                            <img src={logo} alt='logo da digital store' />
+                        </div>  
+                        <p id='textoFooter'>Lorem ipsum dolor sit amet, consectetur<br/>
                         adipiscing elit, sed do eiusmod tempor<br/>
                         incididunt ut labore ut labore et dolore.</p>
                         <Grid container spacing={3}>
@@ -26,42 +30,40 @@ export default function Footer () {
                             <Grid item>
                                 <TwitterIcon sx={{ color: 'white' }} />
                             </Grid>
-                        </Grid>           
-                    </Grid>
-
-                
-                    <Grid item>
-                        <h6><strong>Informação</strong></h6>
-                        <p>Sobre Drip Store</p>
-                        <p>Seguraça</p>
-                        <p>Wishlist</p>
-                        <p>Blog</p>
-                        <p>Trabalhe conosco</p>
-                        <p>Meus pedidos</p>
+                        </Grid>  
+                    </Grid>     
                     </Grid>
                 
                     <Grid item>
-                        <h6><strong>Categorias</strong></h6>
-                        <p>Camisetas</p>
-                        <p>Calças</p>
-                        <p>Bones</p>
-                        <p>Headphones</p>
-                        <p>Tênis</p>
+                        <p className='titulosFooter'>Informação</p>
+                        <p className='textoFooter'>Sobre Drip Store</p>
+                        <p className='textoFooter'>Seguraça</p>
+                        <p className='textoFooter'>Wishlist</p>
+                        <p className='textoFooter'>Blog</p>
+                        <p className='textoFooter'>Trabalhe conosco</p>
+                        <p className='textoFooter'>Meus pedidos</p>
+                    </Grid>
+                
+                    <Grid item>
+                        <p className='titulosFooter'>Categorias</p>
+                        <p className='textoFooter'>Camisetas</p>
+                        <p className='textoFooter'>Calças</p>
+                        <p className='textoFooter'>Bones</p>
+                        <p className='textoFooter'>Headphones</p>
+                        <p className='textoFooter'>Tênis</p>
                     </Grid>
             
                     <Grid item>
-                        <h6><strong>Contato</strong></h6>
-                        <p>Av. Santos Dumont, 1510 - 1<br/>
+                        <p className='titulosFooter'>Contato</p>
+                        <p className='textoFooter'>Av. Santos Dumont, 1510 - 1<br/>
                         andar - Aldeota, Fortaleza -<br/></p>
-                        <p>(85) 3051-3411</p>
+                        <p className='textoFooter'>(85) 3051-3411</p>
                     </Grid>
-                    <Grid container> 
-                    <div className='final'>
+                </Grid>
+                <div className='final'>
                         <hr/>
                         <small>@ 2022 Digital College</small>
                     </div>
-                    </Grid>
-                </Grid>
             </Container>
         </footer>
     )

@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import ProdutosAlta from "./components/ProdutosAlta";
 import Footer from "./components/Footer"
+import "./index.css";
 
 export default function App() {
   return (
