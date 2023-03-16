@@ -6,6 +6,8 @@ import Categorias from "./pages/Categorias";
 import MeusPedidos from "./pages/MeusPedidos";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
+import Carousel from "./components/Carousel";
+import OfertaEspecial from "./components/OfertaEspecial";
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
       <BrowserRouter>
         <Navbar/>
         <Menu/>
+        <Carousel/>
+        <OfertaEspecial/>
 
         <Routes>
           <Route path="/" element={<Home/>} />
