@@ -1,51 +1,59 @@
+/* function produto */
+
 #ProdutosEmAlta{
     background-color: #edf2f4;
-    font-family: 'Inter';
-}
-/* 
-#titulos{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 35px;
-    margin-right: 35px;
 }
 
-.row{
-    margin-top: 20px;
-} 
-
-div div small, div div #duzentos{
-    color: gray;
+.Produto .chip{
+    background-color: #E7FF86;
+    margin: 20px;
+    position: absolute;
 }
 
-div div#valor{
-    display: flex;
-
+.Produto small, .duzentos {
+    color: #8F8F8F;
 }
-div div #duzentos{
+
+.Produto .duzentos{
     text-decoration: line-through;
     margin-right: 5px;
 }
 
-div div #cem{
+.Produto .cem{
     color: #1F1F1F;
 }
 
-div div #cem, div div #duzentos{
+.Produto .cem, .duzentos{
     padding: 0;
     margin-top: -20px;
-    font-size: 24px;
+    font-size: 1.5rem; 
 }
 
-div div div img{
-    width: 292px;
-    height: 321px;
-}
-
-div div #descriçao{
+.Produto .descriçao{
+    color: #474747;
     padding: 0px;
     padding-top: 2px;
     margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.75px;
-} */
+}
+
+.Produto .valor{
+    display: flex;
+}
+.Produto .card{
+    height: 321px;
+    position: relative;
+}
+
+.Produto .card .imagem{
+    margin-left: -25px;
+    margin-top: 25px;
+}
+
+/* Function produtosemalta */
+#ProdutosEmAlta .titulos{
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}

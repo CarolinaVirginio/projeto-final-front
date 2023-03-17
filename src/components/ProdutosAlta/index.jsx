@@ -1,26 +1,22 @@
-import { Container, Grid, Card, Badge  } from '@mui/material';
+import { Container, Grid, Card, Badge, Chip  } from '@mui/material';
 import './styles.css';
 import tenis from './tenis.png';
 import React from 'react';
 
-function Produto(){
+function Produto(props){
+    
     return (
-        <div className='ProdutosEmAlta'>
-            <Grid container>
-                <Grid item>
-                    <Card>
-                        <Badge color="success" badgeContent={"30% OFF"}>
-                            
-                        </Badge>
-                        <img src={tenis} alt='Imagem de um tênis'/>
-                    </Card>
-                    <small>Tênis</small>
-                    <p id='descriçao'>K-Swiss V8 - Masculino</p><br/>
-                    <div id='valor'>
-                        <p id='duzentos'>$200</p> <strong id='cem'>$100</strong>
-                    </div>
-                </Grid>
-            </Grid>
+        <div className='Produto'>
+            <Card className='card'>
+                {props.desconto && <Chip className="chip" label="30% OFF"/>}
+                <img className="imagem" src={tenis} alt='Imagem de um tênis'/>
+            </Card>
+            <small>Tênis</small>
+            <p className='descriçao'>K-Swiss V8 - Masculino</p>
+            <br/>
+            <div className='valor'>
+                <p className='duzentos'>$200</p> <strong className='cem'>$100</strong>
+            </div>
         </div>
     )
 }
@@ -28,25 +24,39 @@ function Produto(){
 export default function ProdutosAlta () {
     return (
         <div id='ProdutosEmAlta' >
-            <Container>
+            <Container disableGutters>
                 <div className='ProdutosEmAlta'>
-                <div id='titulos'>
-                        <h3 className='titulo1'>Produtos em alta</h3>
-                        <a href='#'>Ver todos</a>
-                </div>
-                    <Grid container spacing={4}>
+                    <div className='titulos'>
+                            <h3 className='titulo1'>Produtos em alta</h3>
+                            <a href='#'>Ver todos</a>
+                    </div>
+                    <Grid container spacing={2}>
                         <Grid item xs={3}>
-                        <Produto/>
+                            <Produto desconto/>
+                        </Grid>
+                         <Grid item xs={3}>
+                            <Produto desconto/>
                         </Grid>
                         <Grid item xs={3}>
-                        <Produto/>
+                            <Produto/>
                         </Grid>
                         <Grid item xs={3}>
-                        <Produto/>
+                            <Produto/>
+                        </Grid> 
+                    </Grid>
+                    <Grid container spacing={2}>
+                        <Grid item xs={3}>
+                            <Produto/>
+                        </Grid>
+                         <Grid item xs={3}>
+                            <Produto/>
                         </Grid>
                         <Grid item xs={3}>
-                        <Produto/>
+                            <Produto/>
                         </Grid>
+                        <Grid item xs={3}>
+                            <Produto/>
+                        </Grid> 
                     </Grid>
                 </div>
             </Container>

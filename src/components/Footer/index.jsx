@@ -10,7 +10,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 export default function Footer () {
     return (
         <footer>
-            <Container>
+            <Container disableGutters>
                 <Grid container justifyContent="space-between">
                     <Grid item>
                     <Grid container direction="column">
