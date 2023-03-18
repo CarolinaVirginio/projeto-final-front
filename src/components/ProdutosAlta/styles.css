@@ -1,4 +1,4 @@
-/* function produto */
+/* function Produto */
 
 #ProdutosEmAlta{
     background-color: #edf2f4;
@@ -51,9 +51,18 @@
     margin-top: 25px;
 }
 
-/* Function produtosemalta */
+/* Function ProdutosAlta */
 #ProdutosEmAlta .titulos{
     font-weight: 700;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#ProdutosEmAlta .produtosemalta .titulos a{
+    color: #C92071;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.125rem;
 }

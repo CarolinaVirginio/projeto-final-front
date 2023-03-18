@@ -2,6 +2,7 @@ import { Container, Grid, Card, Badge, Chip  } from '@mui/material';
 import './styles.css';
 import tenis from './tenis.png';
 import React from 'react';
+import line from './Line.png';
 
 function Produto(props){
     
@@ -25,10 +26,10 @@ export default function ProdutosAlta () {
     return (
         <div id='ProdutosEmAlta' >
             <Container disableGutters>
-                <div className='ProdutosEmAlta'>
+                <div className='produtosemalta'>
                     <div className='titulos'>
                             <h3 className='titulo1'>Produtos em alta</h3>
-                            <a href='#'>Ver todos</a>
+                            <a href='#'>Ver todos <img src={line} alt='seta'/> </a>
                     </div>
                     <Grid container spacing={2}>
                         <Grid item xs={3}>
