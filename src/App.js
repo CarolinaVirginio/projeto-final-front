@@ -9,6 +9,7 @@ import Menu from "./components/Menu";
 import ProdutosAlta from "./components/ProdutosAlta";
 import Footer from "./components/Footer"
 import "./index.css";
+import DetalhesProduto from "./pages/DetalhesProduto";
 
 export default function App() {
   return (
@@ -22,6 +23,8 @@ export default function App() {
           <Route path="/produtos" element={<Produtos/>} />
           <Route path="/categorias" element={<Categorias/>} />
           <Route path="/meus-pedidos" element={<MeusPedidos/>} />
+
+          <Route path="/produtos/:id" element={<DetalhesProduto/>} />
         </Routes>
 
         <ProdutosAlta/>
