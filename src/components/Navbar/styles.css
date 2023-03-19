@@ -83,11 +83,11 @@ body {
     height: 43.2px;
     font-weight: 700;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .navbar > .cart {
     position: relative;
-    margin-left: 40px;
     cursor: pointer;
 }
 
