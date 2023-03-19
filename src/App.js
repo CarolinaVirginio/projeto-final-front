@@ -13,8 +13,8 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
-        <Menu />
+        <Navbar/>
+        <Menu/>
 
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/produtos/:id" element={<DetalhesProduto/>} />
         </Routes>
         
-        <Footer />
+          <Footer/>
       </BrowserRouter>
     </div>
   )
