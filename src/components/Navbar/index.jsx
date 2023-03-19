@@ -25,7 +25,7 @@ export default function Navbar() {
             
             <div className="cart">
                 <BsCart2 className="cart-icon" />
-                <span className="badge badge-light">2</span>
+                <span className="badge">2</span>
             </div>
         </nav>
     )
