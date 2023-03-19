@@ -1,0 +1,59 @@
+.card{
+    width: 370px;
+    height: 252px;
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: #D8E3F2;
+
+}
+
+.card .conteudo{
+    position: absolute;
+    text-align: start;
+    margin-top: 30px;
+    border-right: 20px;
+    
+}
+.Container {
+    background-color: #F9F8FE;
+    height: 384px;
+
+}
+
+
+Button {
+    border-radius: 16px;
+    height: 48px;
+
+}
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #474747;
+    padding-top: 32px;
+}
+.card .imagem {
+    height: px;
+    width: 350px;
+    margin-top: 8px;
+}
+.chip {
+    width: 96px;
+    height: 32px;
+    border-radius: 29px;
+    gap: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+
+
+
