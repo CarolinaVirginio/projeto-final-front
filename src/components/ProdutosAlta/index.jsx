@@ -1,4 +1,4 @@
-import { Container, Grid, Card, Badge, Chip  } from '@mui/material';
+import { Container, Grid, Card, Chip  } from '@mui/material';
 import './styles.css';
 import tenis from './tenis.png';
 import React from 'react';
