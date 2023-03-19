@@ -11,7 +11,7 @@ export default function Navbar() {
         <nav className="navbar">
             <Link to="/">
                 <img src={logo} alt="Digital College" className="logo" />
-                <span>Digital College</span>
+                <span>Digital Store</span>
             </Link>
 
             <div className="input-container">
