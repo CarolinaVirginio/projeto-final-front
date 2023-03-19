@@ -2,9 +2,9 @@
 // import Navbar from "../../components/Navbar";
 // import Carousel from "../../components/Carousel";
 import ColecoesDestaque from "../../components/ColecoesDestaque";
-// import ProdutosAlta from "../../components/ProdutosAlta";
+import ProdutosAlta from "../../components/ProdutosAlta";
 // import OfertaEspecial from "";
-// import ColecoesDestaqueIcones from "../../components/ColecoesDestaqueIcones";
+import ColecoesDestaqueIcones from "../../components/ColecoesDestaqueIcones";
 
 export default function Home() {
     return (
@@ -14,8 +14,8 @@ export default function Home() {
             {/* <Navbar/> */}
             {/* <Carousel/> */}
             <ColecoesDestaque/>
-            {/* <ColecoesDestaqueIcones/> */}
-            {/* <ProdutosAlta/> */}
+            <ColecoesDestaqueIcones/>
+            <ProdutosAlta/>
             {/* <OfertaEspecial/> */}
         </div>
     )
