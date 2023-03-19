@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/produtos/:id" element={<DetalhesProduto/>} />
         </Routes>
         
-        <Footer />
+        <Footer/>
       </BrowserRouter>
     </div>
   )
