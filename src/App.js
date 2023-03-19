@@ -3,8 +3,6 @@ import Home from "./pages/Home";
 import Produtos from "./pages/Produtos";
 import Categorias from "./pages/Categorias";
 import MeusPedidos from "./pages/MeusPedidos";
-// import Navbar from "./components/Navbar";
-// import Menu from "./components/Menu";
 // import Footer from "./components/Footer"
 import "./index.css";
 import DetalhesProduto from "./pages/DetalhesProduto";
@@ -23,7 +21,7 @@ export default function App() {
         </Routes>
 
         
-        {/* <Footer/> */}
+          {/* <Footer/> */}
       </BrowserRouter>
     </div>
   )
