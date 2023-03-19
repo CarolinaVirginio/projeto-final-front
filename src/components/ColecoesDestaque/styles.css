@@ -1,8 +1,12 @@
-.card{
+#ColecoesDestaque {
+    background-color:#F9F8FE;
+}
+
+#ColecoesDestaque .Container .card{
     width: 370px;
     height: 252px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     text-align: end;
     padding-left: 20px;
     border-radius: 8px;
@@ -10,30 +14,30 @@
 
 }
 
-.card .conteudo{
+#ColecoesDestaque .Container .card .conteudo{
     position: absolute;
     text-align: start;
     margin-top: 30px;
     border-right: 20px;
     
 }
-.Container {
+#ColecoesDestaque .Container {
     background-color: #F9F8FE;
-    height: 384px;
+    /* height: 384px; */
 
 }
 
 
-Button {
+#ColecoesDestaque .Container Button {
     border-radius: 16px;
     height: 48px;
 
 }
-h2 {
+#ColecoesDestaque .Container h2 {
     margin-top: 10px;
 }
 
-h3 {
+#ColecoesDestaque .Container h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -41,12 +45,12 @@ h3 {
     color: #474747;
     padding-top: 32px;
 }
-.card .imagem {
+#ColecoesDestaque .Container .card .imagem {
     height: px;
     width: 350px;
     margin-top: 8px;
 }
-.chip {
+#ColecoesDestaque .Container .chip {
     width: 96px;
     height: 32px;
     border-radius: 29px;
