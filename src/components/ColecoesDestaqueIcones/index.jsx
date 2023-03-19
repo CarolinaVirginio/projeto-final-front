@@ -56,12 +56,14 @@ export default function ColecoesDestaqueIcones() {
 
   return (
     <>
-        <Container className='container-collection'>
-          <p className="pdest">Coleções em destaque</p>
-          <Grid container direction="row" justifyContent="center" spacing={6}>
-            <Sections />
-          </Grid>
-        </Container>
+      <div id="colecoesicones">
+          <Container className='container-collection'>
+            <p className="pdest">Coleções em destaque</p>
+            <Grid container direction="row" justifyContent="center" spacing={6}>
+              <Sections />
+            </Grid>
+          </Container>
+        </div>
     </>
   );
 }
