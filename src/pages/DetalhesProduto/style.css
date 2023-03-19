@@ -21,8 +21,12 @@
     color: #F6AA1C;
 }
 
-#DetalhesProduto .comprar, .comprar:hover{
+#DetalhesProduto .comprar, .comprar:hover, .avaliação, .avaliação:hover{
     background-color: #F6AA1C;
+    color: #F5F5F5;
+}
+
+#DetalhesProduto .estrelaAvaliação {
     color: #F5F5F5;
 }
 
@@ -38,14 +42,20 @@
 /* .fab1, .fab2, .fab3, .fab4 {
     width: 35px;
     height: 20px;
+    color:
 } */
+
+#DetalhesProduto div.duzentosEdezenove{
+    font-weight: 700;
+    font-size: 2rem;
+}
 
 .duzentosEcinquenta{
     text-decoration: line-through;
 }
-div.cardGrande{
+/* div.cardGrande{
     background-color: #E2E3FF;
-}
-#DetalhesProduto div.botaoDeCor .fab1 {
-    background-color: #6FEEFF;
-}
+} */
+/* #DetalhesProduto div.botaoDeCor .fab1 {
+    background-color: #6FEEFF; */
+/* } */

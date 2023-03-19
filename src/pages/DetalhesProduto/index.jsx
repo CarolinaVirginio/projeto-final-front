@@ -3,24 +3,26 @@ import './style.css';
 import { Grid, Container, Stack, Card, Fab, Button } from '@mui/material';
 import { ChevronLeft, ChevronRight, Star, StarOutline } from "@mui/icons-material";
 
-import sneakers from './White-Sneakers.png'
+import Sneakers from './img/White-Sneakers.png';
 
 export default function DetalhesProduto(){
-
+    
+    const [color, setColor] = React.useState('Todas as cores');
     const [atual, setAtual] = React.useState(0);
-    const imagens = [
-        sneakers,
-        sneakers,
-        sneakers,
-        sneakers,
-        sneakers,
+    
+    const hexColors = [
+        "#E2E3FF",
+        "#FFE8BC",
+        "#FFC0BC",
+        "#DEC699",        
+        "#E8DFCF"
     ];
     const Items = () => {
-        return imagens.map((cada, posicao) => {
+        return hexColors.map((hexColor, posicao) => {
                 return (
                     <Grid item xs={2.4}>
                         <Card onClick={() => setAtual(posicao)} sx={(atual === posicao) && { border: "2px solid red"}}>
-                            <img src={cada} width="100%"/>
+                            <img src={Sneakers} style={{backgroundColor: hexColor}} width="100%"/>
                         </Card>
                     </Grid>
                 );
@@ -29,13 +31,13 @@ export default function DetalhesProduto(){
 
     function anterior(){
         if(atual === 0){
-            setAtual(imagens.length - 1);
+            setAtual(hexColors.length - 1);
         }else{
             setAtual(atual - 1);
         }
     }
     function proximo(){
-        if(atual < imagens.length - 1){
+        if(atual < hexColors.length - 1){
             setAtual(atual + 1);
         }else{
             setAtual(0)
@@ -49,8 +51,7 @@ export default function DetalhesProduto(){
                     <Card className="cardGrande" align="center">
                         <Stack className='stack' direction="row">
                             <ChevronLeft className='left' onClick={() => anterior()}/>
-                            
-                            <img src={sneakers}/>
+                            <img src={Sneakers} width="100%" style={{backgroundColor: hexColors[atual]}}/>
                             <ChevronRight className='right' onClick={proximo}/>
                         </Stack>
                     </Card>
@@ -76,11 +77,12 @@ export default function DetalhesProduto(){
                         <Star/>
                         <Star/>
                         <StarOutline/> 
+                        <Button className='avaliação' variant='contained'>4.7<StarOutline className='estrelaAvaliação'/></Button>
                         {/* colocar quadro com 4.7 e estrela */}
                         <small>(90 avaliações)</small>
                     </div>
 
-                    <div>R$ 219,00 <small className='duzentosEcinquenta'>250,00</small></div>
+                    <div>R$ <strong className='duzentosEdezenove'>219,00</strong> <small className='duzentosEcinquenta'>250,00</small></div>
 
                     <div>
                         <p>Descrição do produto</p>
@@ -94,12 +96,12 @@ export default function DetalhesProduto(){
                     </div>
 
                     <div className='botaoDeCor'>
-                        <p>Cor <small></small></p>
-
-                        <Fab className='Fab1'></Fab>
-                        <Fab className='Fab2'></Fab>
-                        <Fab className='Fab3'></Fab>
-                        <Fab className='Fab4'></Fab>
+                        <p>Cor <small>{color}</small></p>
+                        {/* Mudar nome da cor e cor */}
+                        <Fab className='Fab1' onClick={() => setColor('Azul')} color="primary"></Fab>
+                        <Fab className='Fab2' onClick={() => setColor('Roxo')} color="secondary"></Fab>
+                        <Fab className='Fab3' onClick={() => setColor('Verde')} color="success"></Fab>
+                        <Fab className='Fab4' onClick={() => setColor('Vermelho')} color="error"></Fab>
                     </div>
 
                     <Button className='comprar' variant='contained'>COMPRAR</Button>
