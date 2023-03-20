@@ -1,6 +1,7 @@
 #colecoesicones {
     background-color:#F9F8FE;
-    margin-top: auto;   
+    margin-top: auto;
+    padding: 75px 0;
 }
 
 #colecoesicones .iconeslinks a{
@@ -28,17 +29,12 @@
 
 #colecoesicones .iconeslinks a:hover {
     color: #C92071;
-
-
 }
 
 
 #colecoesicones .container-collection {
     background-color: #F9F8FE;
-    height: 400px;
     margin-top: -25px;
-
-
 }
 
 
