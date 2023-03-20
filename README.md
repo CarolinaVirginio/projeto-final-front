@@ -16,7 +16,7 @@ Ter instalado o Node.js
 
 COMO RODAR A APLICAÇÃO:
 •No terminal, clone o link do projeto:
-   Git clone http://github.com/CarolVirginio/progeto-final-front
+   Git clone https://github.com/CarolinaVirginio/progeto-final-front
 •Entre na pasta do projeto:
    Cd projeto-final-front
 •Instale como dependências:
