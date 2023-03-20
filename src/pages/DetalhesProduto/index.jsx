@@ -78,7 +78,6 @@ export default function DetalhesProduto(){
                         <Star/>
                         <StarOutline/> 
                         <Button className='avaliação' variant='contained'>4.7<StarOutline className='estrelaAvaliação'/></Button>
-                        {/* colocar quadro com 4.7 e estrela */}
                         <small>(90 avaliações)</small>
                     </div>
 
