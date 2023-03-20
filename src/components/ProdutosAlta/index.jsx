@@ -1,4 +1,4 @@
-import { Container, Grid, Card, Badge, Chip  } from '@mui/material';
+import { Container, Grid, Card, Chip  } from '@mui/material';
 import './styles.css';
 import tenis from './tenis.png';
 import React from 'react';
@@ -29,7 +29,7 @@ export default function ProdutosAlta () {
                 <div className='produtosemalta'>
                     <div className='titulos'>
                             <h3 className='titulo1'>Produtos em alta</h3>
-                            <a href='#'>Ver todos <img src={line} alt='seta'/> </a>
+                            <a href='/produtos'>Ver todos <img src={line} alt='seta'/> </a>
                     </div>
                     <Grid container spacing={2}>
                         <Grid item xs={3}>

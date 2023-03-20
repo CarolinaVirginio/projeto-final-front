@@ -39,11 +39,13 @@
     font-size: 3.75rem;
 }
 
-/* .fab1, .fab2, .fab3, .fab4 {
-    width: 35px;
-    height: 20px;
-    color:
-} */
+#DetalhesProduto .botaoDeCor{
+    padding: 12px 0;
+}
+
+#DetalhesProduto .botaoDeCor .fab{
+    margin: 5px;
+}
 
 #DetalhesProduto div.duzentosEdezenove{
     font-weight: 700;
@@ -53,9 +55,6 @@
 .duzentosEcinquenta{
     text-decoration: line-through;
 }
-/* div.cardGrande{
-    background-color: #E2E3FF;
-} */
-/* #DetalhesProduto div.botaoDeCor .fab1 {
-    background-color: #6FEEFF; */
-/* } */
+#DetalhesProduto div.cardGrande .stack{
+    height: 570px;
+}

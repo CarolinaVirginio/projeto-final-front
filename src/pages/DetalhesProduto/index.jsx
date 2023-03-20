@@ -7,7 +7,6 @@ import Sneakers from './img/White-Sneakers.png';
 
 export default function DetalhesProduto(){
     
-    const [color, setColor] = React.useState('Todas as cores');
     const [atual, setAtual] = React.useState(0);
     
     const hexColors = [
@@ -19,13 +18,13 @@ export default function DetalhesProduto(){
     ];
     const Items = () => {
         return hexColors.map((hexColor, posicao) => {
-                return (
-                    <Grid item xs={2.4}>
-                        <Card onClick={() => setAtual(posicao)} sx={(atual === posicao) && { border: "2px solid red"}}>
-                            <img src={Sneakers} style={{backgroundColor: hexColor}} width="100%"/>
-                        </Card>
-                    </Grid>
-                );
+            return (
+                <Grid item xs={2.4}>
+                    <Card onClick={() => setAtual(posicao)} sx={(atual === posicao) && { border: "2px solid red"}}>
+                        <img src={Sneakers} style={{backgroundColor: hexColor}} width="100%"/>
+                    </Card>
+                </Grid>
+            );
         }); 
     }
 
@@ -95,12 +94,18 @@ export default function DetalhesProduto(){
                     </div>
 
                     <div className='botaoDeCor'>
-                        <p>Cor <small>{color}</small></p>
-                        {/* Mudar nome da cor e cor */}
-                        <Fab className='Fab1' onClick={() => setColor('Azul')} color="primary"></Fab>
-                        <Fab className='Fab2' onClick={() => setColor('Roxo')} color="secondary"></Fab>
-                        <Fab className='Fab3' onClick={() => setColor('Verde')} color="success"></Fab>
-                        <Fab className='Fab4' onClick={() => setColor('Vermelho')} color="error"></Fab>
+
+                        {hexColors.map((hexColor, posicao) => {
+                            return (
+                                <Fab className='fab' onClick={() => setAtual(posicao)} sx={{
+                                    backgroundColor: hexColor,
+                                    '&:hover': {
+                                        backgroundColor: hexColor
+                                    }
+                                }}/>
+                            )
+                        })}
+                    
                     </div>
 
                     <Button className='comprar' variant='contained'>COMPRAR</Button>
